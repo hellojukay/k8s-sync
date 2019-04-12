@@ -5,7 +5,7 @@ def sh(String cmd) {
     def sout = new StringBuilder(), serr = new StringBuilder()
     def proc = cmd.execute()
     proc.consumeProcessOutput(sout, serr)
-    proc.waitForOrKill(1000)
+    proc.waitForOrKill(100000000)
     println "out:$sout"
     println "err: $serr"
 }
