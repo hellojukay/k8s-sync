@@ -15,7 +15,5 @@ for(image in lines) {
         continue
     }
     def tag = image.replace("k8s.gcr.io","hellojukay")
-    sh("docker pull ${image}")
-    sh("docker tag ${image} ${tag}")
-    sh("docker push ${tag}")
+    sh("docker pull ${image} && docker tag ${image} ${tag} && docker push ${tag}")
 }
