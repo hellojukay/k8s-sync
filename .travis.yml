@@ -2,6 +2,8 @@ language: bash
 
 services:
   - docker
+before_script:
+- echo "${p-dockerhub}" | docker login -u hellojukay --password-stdin
 
 script:
 - bash sync.sh
