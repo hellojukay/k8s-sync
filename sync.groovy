@@ -14,6 +14,7 @@ for(image in lines) {
     if(image.length() <=1) {
         continue
     }
-    def tag = image.replace("k8s.gcr.io","hellojukay")
+    image = image.trim()
+    def tag = image.replace("k8s.gcr.io","hellojukay").trim()
     sh("docker pull ${image} && docker tag ${image} ${tag} && docker push ${tag}")
 }
