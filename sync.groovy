@@ -6,8 +6,8 @@ def sh(String cmd) {
     def proc = cmd.execute()
     proc.consumeProcessOutput(sout, serr)
     proc.waitForOrKill(100000000)
-    println "out:$sout"
-    println "err: $serr"
+    println "$sout"
+    println "$serr"
 }
 def lines = new File("list.txt").readLines()
 for(image in lines) {
