@@ -1,4 +1,4 @@
-language: bash
+language: groovy
 
 services:
   - docker
@@ -6,4 +6,4 @@ before_script:
 - echo "${dockerhub}" | docker login -u hellojukay --password-stdin
 
 script:
-- bash sync.sh
+- groovy sync.groovy
