@@ -4,5 +4,3 @@
 
 ![badage](https://travis-ci.org/hellojukay/k8s-sync.svg?branch=master)
 
-# TODO 
-* 自动获取镜像来源 * https://storage.googleapis.com/kubernetes-release/release/stable-1.txt
