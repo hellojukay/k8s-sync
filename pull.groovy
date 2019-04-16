@@ -18,4 +18,5 @@ for(image in lines) {
     println(tag)
     sh("docker pull ${tag}")
     sh("docker tag ${tag} ${image}")
+    sh("docker rmi ${tag}")
 }
