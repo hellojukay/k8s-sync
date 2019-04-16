@@ -7,4 +7,4 @@ before_script:
 
 script:
 - groovy sync.groovy
-- gooovy sync_plugin.groovy
+- groovy sync_plugin.groovy
