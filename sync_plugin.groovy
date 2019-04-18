@@ -33,5 +33,6 @@ def sync_list(String []files) {
 }
 
 sync_list (
-    "quay.io_list.txt"
+    "quay.io_list.txt",
+    "k8s.gcr.io_list.txt"
     )
