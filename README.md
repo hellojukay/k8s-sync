@@ -5,8 +5,6 @@
 
 # 使用
 
-执行 `pull.groovy` 自动下载对应的镜像
-
 ```shell
-groovy pull.groovy
+perl pull.pl
 ```
