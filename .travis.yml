@@ -7,4 +7,3 @@ before_script:
 
 script:
 - groovy sync.groovy
-- groovy sync_plugin.groovy
