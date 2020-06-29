@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-open(HF,"<","v1.18.4_list.txt");
+open(HF,"<","v1.18.5_list.txt");
 while(<HF>) {
 	chomp $_;
     my $image = $_;
