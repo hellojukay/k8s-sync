@@ -7,6 +7,7 @@ while(<HF>) {
 		my $cmd = "docker pull hellojukay/$1";
 		printf "%s\n",$cmd;
 		system($cmd);
-        	system("docker tag hellojukay/$1 $image");
+       	system("docker tag hellojukay/$1 $image");
 	}
 }
+system("docker image ls | grep hellojukay | awk '{printf \"%s:%s\n\", \$1, \$2}' | xargs -I {} docker rmi {}");
