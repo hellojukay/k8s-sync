@@ -8,6 +8,6 @@ while(<HF>) {
 		printf "%s\n",$cmd;
 		system($cmd);
        	system("docker tag hellojukay/$1 $image");
-        system("docker rmi hellojukay$1");
+        system("docker rmi hellojukay/$1");
 	}
 }
