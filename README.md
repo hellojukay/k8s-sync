@@ -9,5 +9,5 @@ kubeadm config images list
 # 使用
 
 ```shell
-perl pull.pl
+perl pull.pl v1.19.4_list.txt
 ```
