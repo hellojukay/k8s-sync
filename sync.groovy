@@ -9,7 +9,7 @@ def sh(String cmd) {
     println "$sout"
     println "$serr"
 }
-def lines = new File("v1.18.5_list.txt").readLines()
+def lines = new File("v1.19.1_list.txt").readLines()
 for(image in lines) {
     if(image.length() <=1) {
         continue
